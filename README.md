@@ -1,0 +1,2 @@
+# artifitialCreativity
+AI lyric generator 
