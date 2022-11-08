@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Artifitial Creativity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords"/>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<!-- Bootstrap Core CSS -->
+	<!-- <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<!-- Custom CSS -->
+	<!-- <link href="css/style.css" rel='stylesheet' type='text/css' /> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<!-- font-awesome icons -->
+	<!-- <link href="css/fontawesome-all.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fontawesome-all.min.css') }}">
+	<!-- //Custom Theme files -->
+	<!--webfonts-->
+	<link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<!--//webfonts-->
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="index.html">
+					ARTIFITIAL CREATIVITY
+				</a>
+				<button class="navbar-toggler ml-lg-auto ml-sm-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- navbar menu -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav text-center ml-auto">
+						<li class="nav-item active  mr-3">
+							<a class="nav-link" href="index.html">Hello
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link scroll" href="#about">Create</a>
+						</li>
+						<!-- <li class="nav-item dropdown mr-3">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								Dropdown
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item scroll" href="#services">Services</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item scroll" href="#more">Link1</a>
+							</div>
+						</li> -->
+						<li class="nav-item  mr-3">
+							<a class="nav-link scroll" href="#choose">Tips</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link scroll" href="#more">Lyrics</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link scroll" href="#us">Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- banner -->
+	<div class="banner" id="home">
+		<div class="container">
+			<div class="banner-text">
+				<div class="slider-info text-right">
+					<h1 class="text-uppercase">Create your own lyrics anytime.</h1>
+					<p class="text-white">Complement your talent and creativity with our cool AI lyric generator.</p>
+					<a class="btn btn-agile  mt-4 scroll" href="#about" role="button">CREATE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+
+	<!-- Generate lyrics-->
+	<section class="wthree-row" id="about">
+		<div class="row justify-content-center align-items-center no-gutters abbot-main">
+			<div class="col-lg-6 p-0">
+				<img src="{{ url_for('static', filename='images/about.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 abbot-right px-md-5  py-lg-0 py-3">
+				<div class="card">
+					<div class="card-body px-lg-5">
+						<h3 class="stat-title card-title align-self-center mb-sm-5 mb-2">
+							Write down ideas for your song
+						</h3>
+						<span class="w3-line"></span>
+						<p class="card-text align-self-center my-2 text-white">
+							The model will generate a paragraph for each sentence you write.</p>
+
+						<form action="/action_page.php">
+							<textarea id="w3review" name="w3review" rows="6" cols="48"></textarea>
+							<br>
+							<input type="submit" value="Get song" class="btn btn-agile abt_card_btn scroll mt-4">
+						</form>
+
+						<!-- <a href="#choose" class="btn btn-agile abt_card_btn scroll" style="margin-top:10%; align-items: right;">Know More</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //Generate lyrics -->
+
+	<!-- why chosse us -->
+	<div class="agileits-services py-5" id="choose">
+		<div class="agileits-services-row row no-gutters py-md-3">
+			<div class="offset-lg-1">
+			</div>
+			<div class="col-lg-2 col-md-6 pl-lg-0 pl-3 wthree-title services-head">
+				<h3 class="stat-title pb-sm-5 pb-3 text-dark">Song<br>writing Tips </h3>
+				<a href="#about" class="btn btn-agile abt_card_btn scroll">Get started</a>
+			</div>
+			<div class="col-lg-3">
+				<div class="agileits-services-grids">
+					<div class="services-top">
+						<span class="fab fa-uniregistry"></span>
+						<h3>Where to start
+						</h3>
+					</div>
+					<p>“I have a structured songwriting process. I start with the music and try to come up with musical ideas, 
+						then the melody, then the hook, and the lyrics come last.” 
+						<br>- John Legend
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="agileits-services-grids mt-md-0 mt-3">
+					<div class="services-top">
+						<span class="fab fa-uniregistry"></span>
+						<h3>Experience writing
+						</h3>
+					</div>
+					<p>“My experience with song writing is usually so confessional, it’s so drawn from my own life and my own stories.”
+						<br>- Taylor Swift
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="agileits-services-grids mt-lg-0 mt-3">
+					<div class="services-top">
+						<span class="fab fa-schlix"></span>
+						<h3>Record inspiration
+						</h3>
+					</div>
+					<p>"You can't manufacture inspiration, so a lot of it is still a waiting game for me. I don't have a method that I 
+						can go back to, they either come or they don't." 
+						<br>- Connor Oberst
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //why choose us -->
+
+	<!-- more -->
+	<section class="about-w3ls pt-md-5 pt-3" id="more">
+		<div class="row  position-relative">
+			<div class="col-lg-4">
+				<img src="{{ url_for('static', filename='images/i1.png') }}" alt="" class="img-section4 img-fluid">
+			</div>
+			<div class="col-lg-8 section-4">
+				<div class="col-lg-8 mx-auto py-5">
+					<h3 class="stat-title text-white">Lyrics</h3>
+					<div class="agileits-abt-grids my-sm-5 mt-4 mb-5">
+						<h4>Heading1</h4>
+						<p class="sec-4">Itaque earum rerum hic tenetur a sapiente delectusum hic tenetur a sapiente delectus reiciendis arum rerum hic tenetur
+							a sapiente delectusum hic tenetur.
+						</p>
+					</div>
+					<div class="agileits-abt-grids my-5">
+						<h4>Heading2</h4>
+						<p class="sec-4">Itaque earum rerum hic tenetur a sapiente delectusum hic tenetur a sapiente delectus reiciendis arum rerum hic tenetur
+							a sapiente delectusum hic tenetur.
+						</p>
+					</div>
+					<div class="agileits-abt-grids mt-lg-0 mt-5">
+						<h4>Heading3</h4>
+						<p class="sec-4">Itaque earum rerum hic tenetur a sapiente delectusum hic tenetur a sapiente delectus reiciendis arum rerum hic tenetur
+							a sapiente delectusum hic tenetur.
+						</p>
+					</div>
+					<div class="agileits-abt-grids mt-5">
+						<h4>Heading4</h4>
+						<p class="sec-4">Itaque earum rerum hic tenetur a sapiente delectusum hic tenetur a sapiente delectus reiciendis arum rerum hic tenetur
+							a sapiente delectusum hic tenetur.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- model -->
+	<section class="blog_w3ls" id="us">
+		<div class="row">
+			<div class="offset-lg-1"></div>
+			<div class="col-lg-5 p-5">
+				<div class="row">
+					<h3 class="stat-title card-title align-self-center mb-sm-5 mb-3" style="color: black;">Our Artifitial Creativity in action</h3>
+						<span class="w3-line"></span>
+					<div class="col-md-6 my-md-4">
+						<img src="{{ url_for('static', filename='images/bl1.jpg') }}" class="img-fluid" alt="" />
+						<h5 class="blog-title card-title">
+							Cras ultricies ligula sed.
+						</h5>
+						<p>Cras ultricies ligula sed magna dictum porta auris blandit. </p>
+					</div>
+					<div class="col-md-6 my-4">
+						<img src="{{ url_for('static', filename='images/bl2.jpg') }}" class="img-fluid" alt="" />
+						<h5 class="blog-title card-title">
+							Cras ultricies ligula sed.
+						</h5>
+						<p>Cras ultricies ligula sed magna dictum porta auris blandit. </p>
+					</div>
+					<div class="col-md-6 my-md-0 mt-4">
+						<img src="{{ url_for('static', filename='images/bl3.jpg') }}" class="img-fluid" alt="" />
+						<h5 class="blog-title card-title">
+							Cras ultricies ligula sed.
+						</h5>
+						<p>Cras ultricies ligula sed magna dictum porta auris blandit. </p>
+					</div>
+					<div class="col-md-6 my-md-0 mt-4">
+						<img src="{{ url_for('static', filename='images/bl4.jpg') }}" class="img-fluid" alt="" />
+						<h5 class="blog-title card-title">
+							Cras ultricies ligula sed.
+						</h5>
+						<p>Cras ultricies ligula sed magna dictum porta auris blandit. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 sec-5 sec-5-right p-sm-5 p-3">
+				<div class="card pt-lg-5">
+					<div class="card-body px-sm-5">
+						<h3 class="stat-title card-title align-self-center mb-sm-5 mb-3">Artifitial Creativity</h3>
+						<span class="w3-line"></span>
+						<p class="card-text align-self-center my-sm-4 my-3 text-white">
+							One of the strangest features of transformer-based language models is their ability to generate text that is almost indistinguishable from human-written text.
+							A famous example is OpenAI's GPT-2, which when presented with the prompt:</p>
+						<p class="card-text align-self-center mb-sm-5 mb-3 text-white">In a shocking finding, scientist discovered a herd of unicorns living in a remote, previ‐ ously unexplored 
+							valley, in the Andes Mountains. Even more surprising to the researchers was the fact that the unicorns spoke perfect English genera un articulo que habla sobre unicornios.</p>
+						
+							<p class="card-text align-self-center mb-sm-5 mb-3 text-white">GPT-2 and its more powerful descendants such as GPT-3 can learn a large set of skills and pattern recognition 
+								capabilities that can be activated with different types of prompts. Transformers' ability to generate realistic text has spawned a wide range of applications, such as 
+								InferKit, Write With Transformer, AI Dungeon and conversational agents like Google's Meena that can even tell corny jokes.</p>
+						<!-- <a href="#contact" class="btn btn-agile abt_card_btn scroll">Know More</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //more -->
+
+	<!-- copyright -->
+	<div class="cpy-right text-center">
+		<p>© 2022 Artifitial Creativity
+		</p>
+	</div>
+	<!-- //copyright -->
+	<!-- js-->
+	<script src="{{ url_for('static', filename='js/jquery-2.2.3.min.js') }}"></script>
+	<!-- js-->
+	<!-- start-smooth-scrolling -->
+	<script src="{{ url_for('static', filename='js/move-top.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll ").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script>
+		$(document).ready(function () {
+			/*
+			 var defaults = {
+				 containerID: 'toTop', // fading element id
+				 containerHoverID: 'toTopHover', // fading element hover id
+				 scrollSpeed: 1200,
+				 easingType: 'linear' 
+			 };
+			 */
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<script src="{{ url_for('static', filename='js/SmoothScroll.min.js') }}"></script>
+	<!-- //smooth-scrolling-of-move-up -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="{{ url_for('static', filename='js/bootstrap.js') }}">
+	</script>
+	<!-- //Bootstrap Core JavaScript -->
+</body>
+
+</html>
