@@ -111,10 +111,10 @@
 						<p class="card-text align-self-center my-2 text-white">
 							The model will generate a paragraph for each sentence you write.</p>
 
-						<form action="/action_page.php">
-							<textarea id="w3review" name="w3review" rows="6" cols="48"></textarea>
+						<form action="/" method="post">
+							<textarea type="text" id="w3review" name="w3review" rows="6" cols="48">{{ song }}</textarea>
 							<br>
-							<input type="submit" value="Get song" class="btn btn-agile abt_card_btn scroll mt-4">
+							<input type="submit" value="Get song" class="btn btn-agile abt_card_btn mt-4">
 						</form>
 
 						<!-- <a href="#choose" class="btn btn-agile abt_card_btn scroll" style="margin-top:10%; align-items: right;">Know More</a> -->
